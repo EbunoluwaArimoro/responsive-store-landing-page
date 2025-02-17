@@ -1,0 +1,552 @@
+/* General Body Styles */
+.body {
+    background-color: #EEEEE9;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Alegreya", serif;
+    font-weight: 500;
+}
+
+/* Header Styles */
+#header {
+    background-color: #EEEEE9; 
+    color: #564156;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    font-size: 18px;
+    background-color: #EEEEE9; 
+}
+
+a.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #564156 !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+/* Responsive Navbar Styles */
+@media (min-width: 786px) {
+    .navbar-collapse {
+        display: flex !important; /* Ensure the menu is always displayed on larger screens */
+    }
+
+    .navbar-toggler {
+        display: none !important; /* Hide the toggler on larger screens */
+    }
+}
+
+@media (max-width: 785px) {
+    .navbar-collapse {
+        display: none; /* Hide navbar items on small screens */
+    }
+
+    .navbar-toggler {
+        display: block !important; /* Ensure the toggle button shows on smaller screens */
+    }
+
+    .navbar {
+        font-size: 12px; /* Adjust font size for smaller screens if needed */
+    }
+
+    .navbar-toggler:focus {
+        outline: none; 
+    }
+    
+    .navbar-toggler:active {
+        border: none; 
+    }
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-family: "Alegreya", serif;
+    color: #526658;
+}
+
+.navbar-toggler-icon:active {
+    color: #526658;
+}
+/* Product Card Styles */
+.product-card {
+    margin-bottom: 20px;
+    padding: 15px; /* Add padding for consistency */
+}
+
+/* Hero Styles */
+#hero {
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+    gap: 0;
+}
+
+#hero .container-fluid{
+    padding: 0;
+    height: 80vh;
+}
+
+#hero .row{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+    height: 85.5vh;
+}
+
+.col-md-6.hero-img{
+    padding: 0; 
+}
+
+.hero-img img {
+    width: 100%;
+    height: 85.5vh; 
+    object-fit: cover;
+    object-position: top center; /* This ensures the top center of the image is visible */
+    padding: 0;
+}
+
+.hero-content {
+    position: relative; 
+    background-image: url('images/hero-background.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: white; 
+    height: 100%; 
+    width: 100%; 
+    justify-content: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: left; 
+    padding-left: 92px; 
+    padding-right: 102px;
+}
+
+.hero-content::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.hero-content h1, .hero-content p, .hero-content a {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 60px; 
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+#hero p {
+    font-size: 20px; 
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    background-color: #55286F; 
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn-hero:hover {
+    background-color: #210B2C;
+    color: white;
+}
+
+/* Products Styles */
+#products {
+    padding: 0px 0;
+    margin-bottom: 40px;
+}
+
+.products .container {
+    margin-top: 0;
+}
+
+#products h2 {
+    margin-top: -60px;
+    margin-bottom: 34px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #products h2 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+}
+#products .card {
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+#products .card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#products .card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#products .card p {
+    font-size: 16px;
+}
+
+#products .product-price {
+    color: green;
+}
+
+#products .card a {
+    background-color: #55286F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#products .card a:hover {
+    background-color: #210B2C;
+    color: white;
+}
+
+#products .card a:focus {
+    outline: none; 
+}
+
+#products .card a:active {
+    border: none; 
+}
+
+/* Customer's Testimonials Styles */
+#testimonials {
+    padding: 0px 0;
+    margin-bottom: 40px;
+}
+
+#testimonials .container-fluid {
+    margin-top: 0;
+}
+
+#testimonials h2 {
+    margin-top: -33px;
+    padding-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #testimonials h2 {
+        font-size: 30px;
+    }
+    
+}
+
+#testimonials .carousel {
+    margin-top: 50px;
+    background: #55286F;
+}
+
+#testimonials .carousel-indicators {
+    bottom: -60px;
+}
+
+#testimonials .carousel-indicators li {
+    background-color: #55286F;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-item {
+    background-size: cover; 
+    background-position: center center;
+    height: 60vh;
+    position: relative; 
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 2; 
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80%;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+/* Why Choose Us Styles */
+#why-choose-us {
+    justify-content: center;
+}
+
+#why-choose-us .section-title {
+    font-size: 40px;
+    margin-top: 79px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #why-choose-us .section-title {
+        font-size: 30px;
+    }
+    
+}
+
+#why-choose-us .row {
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#why-choose-us .why-choose-us-card {
+    background-color: #55286F;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/*Newsletters Styles */
+#newsletter {
+    color: black;
+    text-align: center;
+    height: 100vh;
+}
+
+#newsletter .container-fluid {
+    padding: 0;
+    height: 100vh;
+}
+
+#newsletter h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#newsletter p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#newsletter .newsletter-form {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+.newsletter-content {
+    width: 90%; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+#newsletter {
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 90px !important;
+}
+
+#newsletter h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#newsletter p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#newsletter .row {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin-left: -30px;
+    margin-top: 90px;
+}
+
+.newsletter-content {
+    width: 90%; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+#newsletter .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#newsletter form {
+    margin-top: 20px;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+#newsletter .form-group {
+    width: 80%; 
+    margin-right: 10px;
+}
+
+#newsletter input {
+    padding: 10px 20px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+#newsletter button {
+    background-color: #55286F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 20%; 
+    white-space: nowrap; 
+    margin-top: -15px;
+}
+
+#newsletter button:hover {
+    background-color: #210B2C;
+    color: white;
+}
+
+#newsletter button:focus {
+    outline: none;
+}
+
+#newsletter button:active {
+    border: none;
+}
+
+#newsletter .newsletter-img img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center; 
+    width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #55286F; 
+    color: white;
+    padding: 80px 0 40px;
+    text-align: left;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #210B2C;
+}
+
+.footer .social-links ul {
+    list-style: none !important; 
+    padding-left: 0;
+}
+
+.footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: white;
+    color: #55286F;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+}
+
+.footer .quick-links {
+    padding-left: 60px;
+}
+.footer .quick-links h4 {
+    padding-left: 20px;
+}
