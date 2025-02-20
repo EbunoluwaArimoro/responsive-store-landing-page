@@ -50,12 +50,12 @@ a.navbar-brand {
 /* @media (min-width: 786px) {
     .navbar-collapse {
         display: flex !important; /* Ensure the menu is always displayed on larger screens */
-    }
+    /* } */
 
     /* .navbar-toggler {
         display: none !important; /* Hide the toggler on larger screens */
-    }
-} */ */
+    } 
+}   */
 
 @media (max-width: 785px) {
     .navbar-collapse {
@@ -375,7 +375,7 @@ a.navbar-brand {
         height: 40vh;
     }
     .carousel-caption {
-        bottom: 120px;
+        bottom: 100px;
     }
 }
 
@@ -613,7 +613,7 @@ a.navbar-brand {
         color: black;
         text-align: center;
         height: 100vh;
-        margin-bottom: -150px;
+        margin-bottom: -100px;
     }
 }
 
