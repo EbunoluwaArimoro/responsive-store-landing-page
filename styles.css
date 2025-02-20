@@ -47,15 +47,15 @@ a.navbar-brand {
 }
 
 /* Responsive Navbar Styles */
-@media (min-width: 786px) {
+/* @media (min-width: 786px) {
     .navbar-collapse {
         display: flex !important; /* Ensure the menu is always displayed on larger screens */
     }
 
-    .navbar-toggler {
+    /* .navbar-toggler {
         display: none !important; /* Hide the toggler on larger screens */
     }
-}
+} */ */
 
 @media (max-width: 785px) {
     .navbar-collapse {
@@ -181,6 +181,26 @@ a.navbar-brand {
     color: white;
 }
 
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        height: 50vh;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    .hero-img img {
+        height: 50vh;
+    }
+}
+
+
 /* Products Styles */
 #products {
     padding: 0px 0;
@@ -250,6 +270,18 @@ a.navbar-brand {
 
 #products .card a:active {
     border: none; 
+}
+
+@media screen and (max-width: 576px) {
+    #products .card img {
+        height: 350px;
+    }
+    #products .card {
+        margin: 0 20px;
+    }
+    #products h2 {
+        font-size: 30px !important;
+    }
 }
 
 /* Customer's Testimonials Styles */
@@ -333,6 +365,20 @@ a.navbar-brand {
     font-weight: bold;
 }
 
+@media screen and (max-width: 576px) {
+    #testimonials h2 {
+        font-size: 30px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .carousel-item {
+        height: 40vh;
+    }
+    .carousel-caption {
+        bottom: 120px;
+    }
+}
+
 /* Why Choose Us Styles */
 #why-choose-us {
     justify-content: center;
@@ -376,6 +422,7 @@ a.navbar-brand {
     color: black;
     text-align: center;
     height: 100vh;
+    margin-bottom: 90px;
 }
 
 #newsletter .container-fluid {
@@ -406,23 +453,6 @@ a.navbar-brand {
     margin: 0 auto;
 }
 
-#newsletter {
-    color: black;
-    text-align: center;
-    padding-top: 0px;
-    margin-bottom: 90px !important;
-}
-
-#newsletter h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-#newsletter p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 #newsletter .row {
     padding: 0;
     display: flex;
@@ -433,12 +463,7 @@ a.navbar-brand {
     margin-top: 90px;
 }
 
-.newsletter-content {
-    width: 90%; 
-    max-width: 600px; 
-    margin: 0 auto;
-}
-
+/* Form Styles */
 #newsletter .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -498,6 +523,101 @@ a.navbar-brand {
     width: 100%;
 }
 
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+    #newsletter {
+        color: black;
+        text-align: center;
+        height: 100vh;
+        margin-bottom: -40px;
+    }
+    #newsletter .row {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: -80px; 
+        height: auto; 
+    }
+
+    #newsletter .newsletter-img {
+        order: 2;
+        margin-top: 80px;
+        width: 100%;
+        max-width: 100vh;
+        margin-right: -10px;
+    }
+
+    #newsletter .newsletter-form {
+        order: 1;
+        width: 100%;
+    }
+
+    #newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #newsletter .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #newsletter button {
+        width: 80%; 
+        margin-top: 10px;
+    }
+
+    #newsletter h2 {
+        font-size: 28px;
+    }
+
+    #newsletter p {
+        font-size: 16px;
+    }
+
+    /* Adjust image to be full screen with no side spaces on tablets and mobiles */
+    #newsletter .newsletter-img img {
+        height: 60vh;
+        width: 100%;
+        max-width: 100vh;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+
+/* Extra small devices (phones in portrait mode) */
+@media (max-width: 576px) {
+    #newsletter h2 {
+        font-size: 30px;
+        width: 300px;
+        margin: -30px auto;
+        padding-bottom: 50px;
+    }
+
+    #newsletter p {
+        font-size: 14px;
+    }
+
+    #newsletter .newsletter-form {
+        width: 100%;
+        padding: 10px;
+    }
+    #newsletter .newsletter-img img {
+        height: 50vh;
+        width: 100%;
+        max-width: 100vh;
+        object-fit: cover;
+        object-position: top center;
+    }
+    #newsletter {
+        color: black;
+        text-align: center;
+        height: 100vh;
+        margin-bottom: -150px;
+    }
+}
+
+
 /* Footer Styles */
 .footer {
     background-color: #55286F; 
@@ -549,4 +669,9 @@ a.navbar-brand {
 }
 .footer .quick-links h4 {
     padding-left: 20px;
+}
+@media (max-width: 576px) {
+    .footer .quick-links {
+        padding-left: 0;
+    }
 }
