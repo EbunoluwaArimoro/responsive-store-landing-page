@@ -46,17 +46,6 @@ a.navbar-brand {
     margin-right: 10px;
 }
 
-/* Responsive Navbar Styles */
-/* @media (min-width: 786px) {
-    .navbar-collapse {
-        display: flex !important; /* Ensure the menu is always displayed on larger screens */
-    /* } */
-
-    /* .navbar-toggler {
-        display: none !important; /* Hide the toggler on larger screens */
-    } 
-}   */
-
 @media (max-width: 785px) {
     .navbar-collapse {
         display: none; /* Hide navbar items on small screens */
@@ -280,6 +269,89 @@ a.navbar-brand {
         margin: 0 20px;
     }
     #products h2 {
+        font-size: 30px !important;
+    }
+}
+
+/* Categories Styles */
+#categories {
+    padding: 0px 0;
+    margin-bottom: 40px;
+}
+
+.products .container {
+    margin-top: 0;
+}
+
+#categories h2 {
+    margin-top: -20px;
+    margin-bottom: 34px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #products h2 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+}
+#categories .card {
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+#categories .card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#categories .card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#categories .card p {
+    font-size: 16px;
+}
+
+#categories .product-price {
+    color: green;
+}
+
+#categories .card a {
+    background-color: #55286F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#categories .card a:hover {
+    background-color: #210B2C;
+    color: white;
+}
+
+#categories .card a:focus {
+    outline: none; 
+}
+
+#categories .card a:active {
+    border: none; 
+}
+
+@media screen and (max-width: 576px) {
+    #categories .card img {
+        height: 350px;
+    }
+    #categories .card {
+        margin: 0 20px;
+    }
+    #categories h2 {
         font-size: 30px !important;
     }
 }
